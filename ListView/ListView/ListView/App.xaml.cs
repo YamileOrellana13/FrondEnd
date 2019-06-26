@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ListView.View;
+using ListView.ViewModels;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +14,9 @@ namespace ListView
             InitializeComponent();
 
             MainPage = new MainPage();
+            var mainViewModel = MainViewModel.GetInstance();            // esta comprobando que el main view model este creado
+            mainViewModel.Paises = new PaisesViewModel();                //creando y llamando al constructor view model
+            this.MainPage = new NavigationPage(new PaisesPage());        //asignando que la pagina principal es paises page
         }
 
         protected override void OnStart()

@@ -69,8 +69,8 @@ namespace ListView.ViewModels
 
             var response = await this.apiService.GetList<Paises>(
                 "https://restcountries.eu/",                                //AQUI CAMBIAMOS  POR EL ENLACE QUE NOS DE//"/api","/Students"); esto es para el profe
-                "rest/v2",
-                "/all");
+                "/rest",
+                "/v2/all");
             if (!response.IsSuccess)
             {
                 this.IsRefreshing = false;

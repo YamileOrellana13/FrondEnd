@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-                                        //Pongo estas librerias siempre
+                        //Pongo estas librerias siempre
 namespace ListView.ViewModels
 {
 

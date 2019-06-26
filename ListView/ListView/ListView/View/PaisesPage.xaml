@@ -38,17 +38,12 @@
                                         <Label 
                                             FontAttributes="Bold"
                                             FontSize="Large" 
-                                            Text="{Binding name}"
+                                            Text="{Binding Name}"
                                             TextColor="Black">
                                         </Label>
                                         <Label 
                                             FontSize="Medium" 
-                                            Text="{Binding capital}"
-                                            TextColor="Black">
-                                        </Label>
-                                        <Label 
-                                            FontSize="Medium" 
-                                            Text="{Binding population}"
+                                            Text="{Binding Capital}"
                                             TextColor="Black">
                                         </Label>
 
@@ -60,6 +55,5 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
-
     </ContentPage.Content>
 </ContentPage>
